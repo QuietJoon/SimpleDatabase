@@ -6,12 +6,9 @@ module Data.SimpleDatabase.PureT (
   ) where
 
 
-import Data.SimpleDatabase.Types
 import Data.SimpleDatabase.PureT.Types
 
 
-import Data.IntMap (IntMap)
-import Data.Trie (Trie)
 import qualified Data.IntMap as IM
 import qualified Data.Trie as T
 import Data.Maybe
@@ -252,7 +249,7 @@ modifyDBSSL key mF db@Database{..} =
   db { dbssl = T.adjust mF key dbssl }
 
 
--- Evaluate Database to Garbage Collection
+-- Evaluate Database to clean chunk up
 
 evaluateDatabase :: Database -> IO ()
 evaluateDatabase Database{..} = do

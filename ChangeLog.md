@@ -1,5 +1,9 @@
 # Revision history for SimpleDatabase
 
+## 0.0.3.1  -- 2017/01/21
+
+* Little refactoring.
+
 ## 0.0.3.0  -- 2017/01/18
 
 * Replace the content type from `ByteString` to lazy `Text`.

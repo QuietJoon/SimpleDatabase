@@ -1,8 +1,7 @@
 name:                   SimpleDatabase
-version:                0.0.3.0
+version:                0.0.3.1
 synopsis:               Just a simple database
 -- description:            
--- homepage:               dev.quietjoon.net/projects/SimpleDatabase
 homepage:               dev.quietjoon.net/projects/SimpleDatabase
 license:                BSD3
 license-file:           LICENSE

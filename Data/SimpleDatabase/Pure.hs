@@ -6,12 +6,9 @@ module Data.SimpleDatabase.Pure (
   ) where
 
 
-import Data.SimpleDatabase.Types
 import Data.SimpleDatabase.Pure.Types
 
 
-import Data.HashMap.Strict (HashMap)
-import Data.IntMap (IntMap)
 import qualified Data.HashMap.Strict as HM
 import qualified Data.IntMap as IM
 import Data.Maybe
@@ -252,7 +249,7 @@ modifyDBSSL key mF db@Database{..} =
   db { dbssl = HM.adjust mF key dbssl }
 
 
--- Evaluate Database to Garbage Collection
+-- Evaluate Database to clean chunk up
 
 evaluateDatabase :: Database -> IO ()
 evaluateDatabase Database{..} = do
