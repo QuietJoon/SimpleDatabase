@@ -3,7 +3,7 @@ version:                0.0.3.1
 synopsis:               Just a simple database
 -- description:            
 homepage:               http://dev.quietjoon.net/projects/SimpleDatabase.html
-bug-reports:            http://github.com/QuietJoon/SimpleDatabase/issues
+bug-reports:            https://github.com/QuietJoon/SimpleDatabase/issues
 license:                BSD3
 license-file:           LICENSE
 author:                 YongJoon Joe
